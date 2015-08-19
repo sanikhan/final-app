@@ -1,0 +1,10 @@
+<h1>Editing Vehicle</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @vehicle %> |
+<%= link_to 'Back', vehicles_path %>
+<%= link_to 'Client', controller: 'clients' %>
+<%= link_to 'Hire' , controller: 'hires' %>
+<%= link_to 'Vehicle', controller: 'vehicles' %>
+<%= link_to 'Home' , controller: 'welcome' %>

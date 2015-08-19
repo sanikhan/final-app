@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vehicle.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @vehicle.color %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>
+<%= link_to 'Client', controller: 'clients' %>
+<%= link_to 'Hire' , controller: 'hires' %>
+<%= link_to 'Vehicle', controller: 'vehicles' %>
+<%= link_to 'Home' , controller: 'welcome' %>

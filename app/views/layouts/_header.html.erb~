@@ -1,0 +1,32 @@
+<header>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container", id="container">
+      <ul class="nav navbar-nav">
+ <a class="navbar-brand" href="#">CAR HIRE Dorset</a>
+ 
+ <li class="active"> <%= link_to 'Vehicle', controller: 'vehicles' %> </li>
+  
+ <li class="active">  <%= link_to 'Client', controller: 'clients' %> </li>
+ 
+<li class="active">   <%= link_to 'Hire', controller: 'hires' %> </li>
+ 
+ </ul>
+ 
+    <nav class="nav pull-right">
+ <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+<% if logged_in? %>
+<%= link_to "Log out",logout_path,method: "delete" %>
+<% else %>
+<%= link_to "Log in",login_path %>
+<% end %>
+</nav>
+</div>
+</div>
+</header>
+<%= image_tag("car_logo.png", :alt => "Sample App", :class => "round") %>
+
+</nav>
+<nav class="round">
+</nav>
+</header>

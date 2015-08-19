@@ -1,0 +1,37 @@
+<%= form_for(@hire) do |f| %>
+  <% if @hire.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hire.errors.count, "error") %> prohibited this hire from being saved:</h2>
+
+      <ul>
+      <% @hire.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pk_date %><br>
+    <%= f.date_select :pk_date %>
+  </div>
+  <div class="field">
+    <%= f.label :re_date %><br>
+    <%= f.date_select :re_date %>
+  </div>
+  <div class="field">
+    <%= f.label :client_id %><br>
+    <%= f.number_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicle_id %><br>
+    <%= f.number_field :vehicle_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <%= link_to 'Customer', controller: 'customers' %>
+<%= link_to 'Hire' , controller: 'hires' %>
+<%= link_to 'Vehicle', controller: 'vehicles' %>
+<%= link_to 'Home' , controller: 'welcome' %>
+<% end %>

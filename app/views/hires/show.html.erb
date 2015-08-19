@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pk date:</strong>
+  <%= @hire.pk_date %>
+</p>
+
+<p>
+  <strong>Re date:</strong>
+  <%= @hire.re_date %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @hire.client_id %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @hire.vehicle_id %>
+</p>
+
+<%= link_to 'Edit', edit_hire_path(@hire) %> |
+<%= link_to 'Back', hires_path %>
+<%= link_to 'Client', controller: 'clients' %>
+<%= link_to 'Hire' , controller: 'hires' %>
+<%= link_to 'Vehicle', controller: 'vehicles' %>
+<%= link_to 'Home' , controller: 'welcome' %>

@@ -1,0 +1,8 @@
+<h1> Welcome TO Online Car Rental Portal </h1>
+<p> This Car Rental Service Is Going To Serve Every Individual That is In the Need Of  Having A Transport But Cant Afford It Personally.So Just SignIn And Fill Up The Form And Have Your Dream Car At Your Door Step For Your Required Period OF Time. </p>
+<h3>Location:Saddar Shopno#3 ,Karachi:</h3>
+<h4>Phone#:021-7829037 </h4>
+<%= link_to 'Vehicle', controller: 'vehicles' %>
+<%= link_to 'Client', controller: 'clients' %>
+<%= link_to 'Hire', controller: 'hires' %>
+
